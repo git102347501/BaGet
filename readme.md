@@ -3,9 +3,10 @@
 ![Build status] [![Discord][Discord image]][Discord link] [![Twitter][Twitter image]][Twitter link]
 
 A lightweight [NuGet] and [symbol] server.
+Let's joyfully welcome the upgrade of Baget to net8.0 !
 
 <p align="center">
-  <img width="100%" src="https://user-images.githubusercontent.com/737941/50140219-d8409700-0258-11e9-94c9-dad24d2b48bb.png">
+  ![1](https://github.com/user-attachments/assets/fda24a90-4154-47af-9434-8017174e97d5)
 </p>
 
 ## Getting Started
