@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;  
 
 namespace BaGet.Core
 {
@@ -33,8 +33,9 @@ namespace BaGet.Core
         public Task<int> SaveChangesAsync() => SaveChangesAsync(default);
 
         public virtual async Task RunMigrationsAsync(CancellationToken cancellationToken)
-            => await Database.MigrateAsync(cancellationToken);
-
+        {
+            // await Database.MigrateAsync(cancellationToken)
+        }
         public abstract bool IsUniqueConstraintViolationException(DbUpdateException exception);
 
         public virtual bool SupportsLimitInSubqueries => true;
@@ -59,16 +60,16 @@ namespace BaGet.Core
                 .IsRequired();
 
             package.Property(p => p.NormalizedVersionString)
-                .HasColumnName("Version")
+                //.HasColumnName("Version")
                 .HasMaxLength(MaxPackageVersionLength)
                 .IsRequired();
 
             package.Property(p => p.OriginalVersionString)
-                .HasColumnName("OriginalVersion")
+                //.HasColumnName("OriginalVersion")
                 .HasMaxLength(MaxPackageVersionLength);
 
-            package.Property(p => p.ReleaseNotes)
-                .HasColumnName("ReleaseNotes");
+            //package.Property(p => p.ReleaseNotes)
+            //    .HasColumnName("ReleaseNotes");
 
             package.Property(p => p.Authors)
                 .HasMaxLength(DefaultMaxStringLength)

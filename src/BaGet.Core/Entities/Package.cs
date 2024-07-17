@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using NuGet.Versioning;
 
 namespace BaGet.Core
@@ -36,6 +37,7 @@ namespace BaGet.Core
         public bool HasReadme { get; set; }
         public bool HasEmbeddedIcon { get; set; }
         public bool IsPrerelease { get; set; }
+        [Column("ReleaseNotes")]
         public string ReleaseNotes { get; set; }
         public string Language { get; set; }
         public bool Listed { get; set; }
@@ -64,7 +66,10 @@ namespace BaGet.Core
         public List<PackageType> PackageTypes { get; set; }
         public List<TargetFramework> TargetFrameworks { get; set; }
 
+        [Column("Version")]
         public string NormalizedVersionString { get; set; }
+
+        [Column("OriginalVersion")]
         public string OriginalVersionString { get; set; }
 
 
