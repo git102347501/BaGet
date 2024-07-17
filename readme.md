@@ -6,8 +6,7 @@ A lightweight [NuGet] and [symbol] server.
 
 Let's joyfully welcome the upgrade of Baget to net8.0 !
 
-
-![1](https://github.com/user-attachments/assets/fec1a692-f03a-41eb-bfbd-3bea5f03ef96)
+![1721228716151](https://github.com/user-attachments/assets/4a3e2081-b6eb-4177-972c-8b6876f9cc0d)
 
 ## Getting Started
 
