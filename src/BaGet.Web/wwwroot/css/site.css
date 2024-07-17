@@ -1,4 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 /* Layout
@@ -73,8 +73,8 @@ h4 {
 }
 
 .navbar-inverse {
-    background-color: #004880;
-    border-color: #002b4d;
+  background-color: #7f10ce;
+  background-image: linear-gradient(43deg, #7f10ce 0%, #983bbc 46%, #415cef 100%); 
 }
 
 .navbar {
